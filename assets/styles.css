@@ -23,14 +23,21 @@ body {
     grid-area:graphs;
 }
 
+#read-me {
+    grid-area:readme;
+    font-size:10px;
+    padding-left:5%;
+}
+
 .main-container {
     height:100vh;
     display:grid;
-    grid-template-columns: 3fr 5fr;
-    grid-template-rows: 1fr 1fr 6fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 6fr;
     grid-template-areas:
         "header header"
         "params text-output"
+        "readme empty"
         "graphs graphs"
 }
 
@@ -65,5 +72,3 @@ body {
 #locSimilar{
     grid-area:graph5;
 }
-
-.button {background-color: #555555;} 
